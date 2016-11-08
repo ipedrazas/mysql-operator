@@ -1,0 +1,15 @@
+apiVersion: "infra.k8s.uk/v1"
+kind: "Mysql"
+description: "Object to define a database in AWS RDS"
+metadata:
+  name: "wordpres-rds"
+spec:
+  name: "wordpres-rds"
+  provider: aws
+  class: "db.t2.micro"
+  storage: "20"
+  engine: "mysql"
+  username: "wpsecretadmin"
+  password: "S3cr3t_P4ssw0rd"
+  service: "mywordpress"
+

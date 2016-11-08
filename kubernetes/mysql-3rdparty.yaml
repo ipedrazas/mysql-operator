@@ -1,0 +1,10 @@
+apiVersion: extensions/v1beta1
+kind: ThirdPartyResource
+description:  "A specification of a MySQL Database."
+metadata:
+  name: "mysql.infra.k8s.uk"
+  labels:
+      resource: database
+      object: mysql
+versions:
+  - name: v1

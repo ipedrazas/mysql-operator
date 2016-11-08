@@ -1,0 +1,11 @@
+apiVersion: "infra.k8s.uk/v1"
+kind: "Mysql"
+description: "Object to define a database"
+metadata:
+  name: "wordpress"
+spec:
+  name: "wordpress"
+  provider: "kubernetes"
+  username: "wpsecretadmin"
+  password: "S3cr3t_P4ssw0rd"
+  service: "mywordpress"

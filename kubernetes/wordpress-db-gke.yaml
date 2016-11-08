@@ -1,0 +1,15 @@
+apiVersion: "infra.k8s.uk/v1"
+kind: "Mysql"
+description: "Object to define a database in Google Cloud SQL"
+metadata:
+  name: "wordpres-gke"
+spec:
+  name: "wordpres-gke"
+  provider: aws
+  class: "db-n1-standard-1"
+  storage: "10"
+  engine: "mysql"
+  username: "wpsecretadmin"
+  password: "S3cr3t_P4ssw0rd"
+  service: "mywordpress"
+
